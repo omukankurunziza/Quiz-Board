@@ -10,3 +10,6 @@ function check() {
     var questionNine = document.Quiz.questionNine.value;
     var questionTen = document.Quiz.questionTen.value;
     var right = 0;
+    if (questionOne == "correct") {
+        right = right + 5;
+    };
