@@ -6,6 +6,7 @@ A project that allows the user to answer questions from a multiple choice questi
 You would need the following to access the website
  * Smart phone/PC/laptop/Desktop/Tablet or any PDA *Internet connectivity (either wireless or ethernet), * A web browser(Chrome is most recommendable)
  ## link to live site on GitHub pages
+ https://omukankurunziza.github.io/Quiz-Board/
  ## BDD
 
 In this quiz board one is encouraged to answer all the questions witout failure:
