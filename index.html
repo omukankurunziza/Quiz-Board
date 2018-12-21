@@ -1,112 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rei="stylesheet" type="text/css" href="styles.css">
-        <title>Document</title>
-    </head>
-    <body>
-        <div class="container">
-            <div class="jumbotron">
-                <h1>Quiz Board</h1>
-                <p>This quiz board about Javascript</p>
-            </div>
-            <form id="Quiz" action="index.html" method="POST" name="Quiz">
-            <div class="well">
-                    
-                        <p><strong> Q1. How do you declare a JavaScript variable? </strong></p><br>
-                        <input type="radio" name="questionOne" id="mc" value="wrong"> v carName;<br>
-                        <input type="radio" name="questionOne" id="mc" value="correct"> var carName;<br>
-                        <input type="radio" name="questionOne" id="mc" value="wrong"> variable carName;<br>
-            </div>
-            <div class="well">
-                    
-                        <p><strong> Q2.What is the correct way to write a JavaScript array?</strong></p><br>
-                        <input type="radio" name="questionTwo" id="mc" value="wrong"> var colors = 1 = ("red"), 2 = ("green"), 3 = ("blue")<br>
-                        <input type="radio" name="questionTwo" id="mc" value="wrong"> var colors = "red", "green", "blue"<br>
-                        <input type="radio" name="questionTwo" id="mc" value="correct"> var colors = ["red", "green", "blue"]<br>
-                        <input type="radio" name="questionTwo" id="mc" value="wrong"> var colors = (1:"red", 2:"green", 3:"blue")<br>
-                        
+<html>
 
-            </div>
-            <div class="well">
-                   
-                        <p><strong> Q3. Which operator is used to assign a value to a variable? </strong></p><br>
-                        <input type="radio" name="questionThree" id="mc" value="wrong"> *<br>
-                        <input type="radio" name="questionThree" id="mc" value="correct"> =<br>
-                        <input type="radio" name="questionThree" id="mc" value="wrong"> -<br>
-                        <input type="radio" name="questionThree" id="mc" value="wrong"> x<br>
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <meta http-equiv="X-UA-Compatible" content="ie=edge">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+       <link rel="stylesheet" type="text/css" href="styles.css">
+       <title>Login</title>
+   </head>
 
-            </div>
-            <div class="well">
-                    
-                        <p><strong> Q4. How do you find the number with the highest value of x and y?  </strong></p><br>
-                        <input type="radio" name="questionFour" id="mc" value="wrong"> top(x, y)<br>
-                        <input type="radio" name="questionFour" id="mc" value="wrong"> ceil(x, y)<br>
-                        <input type="radio" name="questionFour" id="mc" value="correct"> Math.max(x, y)<br>
-                        <input type="radio" name="questionFour" id="mc" value="wrong"> Math.ceil(x, y)<br>
-            </div>
-            <div class="well">
-                   
-                        <p><strong> Q5.JavaScript is the same as Java.  </strong></p><br>
-                        <input type="radio" name="questionFive" id="mc" value="wrong"> True<br>
-                        <input type="radio" name="questionFive" id="mc" value="correct"> False<br>
+   <body>
+           <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
 
-            </div>
-            <div class="well">
-                    
-                        <p><strong> Q6.What will the following code return: Boolean(10 > 9)  </strong></p><br>
-                        <input type="radio" name="questionSix" id="mc" value="correct"> true<br>
-                        <input type="radio" name="questionSix" id="mc" value="wrong"> NaN<br>
-                        <input type="radio" name="questionSix" id="mc" value="wrong"> false<br>
-                        
 
-                        
-            </div>
-            <div class="well">
-                   
-                        <p><strong> Q7. Is JavaScript case-sensitive?  </strong></p><br>
-                        <input type="radio" name="questionSeven" id="mc" value="wrong"> No<br>
-                        <input type="radio" name="questionSeven" id="mc" value="correct"> Yes<br>
-                        
-            </div>
-            <div class="well">
-                    
-                        <p><strong> Q8.Which event occurs when the user clicks on an HTML element?  </strong></p><br>
-                        <input type="radio" name="questionEight" id="mc" value="wrong"> onmouseover<br>
-                        <input type="radio" name="questionEight" id="mc" value="correct"> onclick<br>
-                        <input type="radio" name="questionEight" id="mc" value="wrong">  onchange<br>
-                        <input type="radio" name="questionEight" id="mc" value="wrong"> onmouseclick<br>
-                        
-            </div>
-            <div class="well">
-                    
-                        <p><strong> Q9.How do you call a function named "myFunction"?  </strong></p><br>
-                        <input type="radio" name="questionNine" id="mc" value="wrong"> call myFunction()<br>
-                        <input type="radio" name="questionNine" id="mc" value="wrong"> call function myFunction(<br>
-                        <input type="radio" name="questionNine" id="mc" value="correct">  myFunction()<br>
-                        
 
-                        
-            </div>
-            <div class="well">
-                    
-                    <p><strong> Q10.How do you create a function in JavaScript?  </strong></p><br>
-                    <input type="radio" name="questionTen" id="mc" value="correct"> function myFunction() <br>
-                    <input type="radio" name="questionTen" id="mc" value="wrong"> function:myFunction()<br>
-                    <input type="radio" name="questionTen" id="mc" value="wrong"> function = myFunction()<br>
-                    
+<body id="LoginForm">
+<div class="container">
+<h1 class="form-heading">login Form</h1>
+<div class="login-form">
+<div class="main-div">
+   <div class="panel">
+  <p>Please enter your email and password</p>
+  </div>
+   <form id="Login"  method="POST" action="form.html">
 
-                    
-        </div>
-            <input type="button" name="results" value="SUBMIT" id="button" class="btn btn-success" onClick="check();">
-            </form>
-        </div>
-        
-        <script src="scripts.js"></script>
-    </body>
+       <div class="form-group">
+
+
+           <input type="email" class="form-control" id="inputEmail" placeholder="Email Address">
+
+       </div>
+
+       <div class="form-group">
+
+           <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+
+       </div>
+       <div class="forgot">
+       <a href="reset.html">Forgot password?</a>
+</div>
+<button type="submit" class="btn btn-primary" ><a href="form.html">login</a></button>
+
+   </form>
+   </div>
+<p class="botto-text"> Designed by Uwizeyimana Hulde</p>
+</div></div></div>
+
+
+</body>
+</html>
+
+</body>
 </html>
