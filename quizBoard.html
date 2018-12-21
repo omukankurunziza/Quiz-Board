@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <title>Quiz Board</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                <div class="panel panel-info">
+                    <h1>Quiz Board</h1>
+                </div>
+            
+                <br>
+                <p><em>Answer correctly all questions</em></p>
+            
+            <form id="Quiz" action="index.html" method="POST" name="Quiz">
+            <div class="well">
+                    
+                        <p><strong> Q1. How do you declare a JavaScript variable? </strong></p><br>
+                        <input type="radio" name="questionOne" id="mc" value="wrong" required> v carName;<br>
+                        <input type="radio" name="questionOne" id="mc" value="correct" required> var carName;<br>
+                        <input type="radio" name="questionOne" id="mc" value="wrong" required> variable carName;<br>
+            </div>
+            <div class="well">
+                    
+                        <p><strong> Q2.What is the correct way to write a JavaScript array?</strong></p><br>
+                        <input type="radio" name="questionTwo" id="mc" value="wrong" required> var colors = 1 = ("red"), 2 = ("green"), 3 = ("blue")<br>
+                        <input type="radio" name="questionTwo" id="mc" value="wrong" required> var colors = "red", "green", "blue"<br>
+                        <input type="radio" name="questionTwo" id="mc" value="correct" required> var colors = ["red", "green", "blue"]<br>
+                        <input type="radio" name="questionTwo" id="mc" value="wrong" required> var colors = (1:"red", 2:"green", 3:"blue")<br>
+                        
+
+            </div>
+            <div class="well">
+                   
+                        <p><strong> Q3. Which operator is used to assign a value to a variable? </strong></p><br>
+                        <input type="radio" name="questionThree" id="mc" value="wrong" required> *<br>
+                        <input type="radio" name="questionThree" id="mc" value="correct" required> =<br>
+                        <input type="radio" name="questionThree" id="mc" value="wrong" required> -<br>
+                        <input type="radio" name="questionThree" id="mc" value="wrong" required> x<br>
+
+            </div>
+            <div class="well">
+                    
+                        <p><strong> Q4. How do you find the number with the highest value of x and y?  </strong></p><br>
+                        <input type="radio" name="questionFour" id="mc" value="wrong" required> top(x, y)<br>
+                        <input type="radio" name="questionFour" id="mc" value="wrong" required> ceil(x, y)<br>
+                        <input type="radio" name="questionFour" id="mc" value="correct"required > Math.max(x, y)<br>
+                        <input type="radio" name="questionFour" id="mc" value="wrong" required> Math.ceil(x, y)<br>
+            </div>
+            <div class="well">
+                   
+                        <p><strong> Q5.JavaScript is the same as Java.  </strong></p><br>
+                        <input type="radio" name="questionFive" id="mc" value="wrong" required> True<br>
+                        <input type="radio" name="questionFive" id="mc" value="correct" required>False<br>
+
+            </div>
+            <div class="well">
+                    
+                        <p><strong> Q6.What will the following code return: Boolean(10 > 9)  </strong></p><br>
+                        <input type="radio" name="questionSix" id="mc" value="correct" required> true<br>
+                        <input type="radio" name="questionSix" id="mc" value="wrong" required> NaN<br>
+                        <input type="radio" name="questionSix" id="mc" value="wrong" required> false<br>
+                        
+
+                        
+            </div>
+            <div class="well">
+                   
+                        <p><strong> Q7. Is JavaScript case-sensitive?  </strong></p><br>
+                        <input type="radio" name="questionSeven" id="mc" value="wrong" required> No<br>
+                        <input type="radio" name="questionSeven" id="mc" value="correct"required > Yes<br>
+                        
+            </div>
+            <div class="well">
+                    
+                        <p><strong> Q8.Which event occurs when the user clicks on an HTML element?  </strong></p><br>
+                        <input type="radio" name="questionEight" id="mc" value="wrong" required> onmouseover<br>
+                        <input type="radio" name="questionEight" id="mc" value="correct" required> onclick<br>
+                        <input type="radio" name="questionEight" id="mc" value="wrong" required>  onchange<br>
+                        <input type="radio" name="questionEight" id="mc" value="wrong" required> onmouseclick<br>
+                        
+            </div>
+            <div class="well">
+                    
+                        <p><strong> Q9.How do you call a function named "myFunction"?  </strong></p><br>
+                        <input type="radio" name="questionNine" id="mc" value="wrong" required> call myFunction()<br>
+                        <input type="radio" name="questionNine" id="mc" value="wrong" required> call function myFunction(<br>
+                        <input type="radio" name="questionNine" id="mc" value="correct" required>  myFunction()<br>
+                        
+
+                        
+            </div>
+            <div class="well">
+                    
+                    <p><strong> Q10.How do you create a function in JavaScript?  </strong></p><br>
+                    <input type="radio" name="questionTen" id="mc" value="correct" required> function myFunction() <br>
+                    <input type="radio" name="questionTen" id="mc" value="wrong"required > function:myFunction()<br>
+                    <input type="radio" name="questionTen" id="mc" value="wrong" required> function = myFunction()<br>
+                    
+
+                    
+        </div>
+            <input type="button" name="results" value="SUBMIT" id="button" class="btn btn-success" onClick="check();">
+            </form>
+        </div>
+        
+    </div>
+        <div id="points">
+                <p id="correctNumber">HERE IS YOUR SCORE:</p>
+        </div>
+        
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+        <script src="scripts.js"></script>
+    </body>
+</html>
