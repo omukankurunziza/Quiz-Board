@@ -11,7 +11,7 @@ function check() {
     var questionTen = document.Quiz.questionTen.value;
     var right = 0;
     if (questionOne == "correct") {
-        right = right + 5;
+        right = right + 5;}
     if (questionThree == "correct") {
         right = right + 5;
     
