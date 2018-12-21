@@ -21,15 +21,15 @@ function check() {
     if (questionFive == "correct") {
         right = right + 5;}
     if (questionSix == "correct") {
-            right = right + 5;}
+        right = right + 5;}
     if (questionSeven == "correct") {
-                right = right + 5;}
+        right = right + 5;}
     if (questionEight == "correct") {
-                    right = right + 5;} 
+        right = right + 5;} 
     if (questionNine == "correct") {
-                        right = right + 5;}
+        right = right + 5;}
     if (questionTen == "correct") {
-                            right = right + 5;}     
+        right = right + 5;}     
     };
     document.getElementById("fifth-p").style.visibility = "visible";
     document.getElementById("correctNumber").innerHTML = "HERE IS YOUR SCORE: " + right + "/50";
