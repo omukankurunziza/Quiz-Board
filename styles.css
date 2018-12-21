@@ -4,3 +4,15 @@ h1{
     background-color:green;
 
 }
+
+
+#points{
+    visibility: hidden;
+    background-color: burlywood;
+    height:300px;
+}
+#points p{
+    text-align: center;
+    font-size: 40px;
+
+}
