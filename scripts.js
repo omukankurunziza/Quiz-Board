@@ -12,8 +12,9 @@ function check() {
     var right = 0;
     if (questionOne == "correct") {
         right = right + 5;
-     if (questionTwo == "correct") {
+    if (questionThree == "correct") {
         right = right + 5;
+    
     
 
     };
