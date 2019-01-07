@@ -1,3 +1,4 @@
+// Front End Logic
 function check() {
     var questionOne = document.Quiz.questionOne.value;
     var questionTwo = document.Quiz.questionTwo.value;
@@ -37,3 +38,14 @@ function check() {
     $(".container").fadeOut();
 
 };
+// Business LOGIC
+function myPoints(question){
+var right=0;
+myPoints.forEach(function(question){
+if(question === correct){
+    right+=5;
+}
+});
+return right;
+}
+
